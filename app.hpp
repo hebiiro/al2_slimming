@@ -14,18 +14,19 @@ namespace apn::slimming
 		{
 			MY_TRACE_FUNC("");
 
+			// 最初にaviutl2ウィンドウを捕捉します。
+			catch_aviutl2_window();
+
 			// 各種開始処理を実行します。
 			debug.init();
 			config_io.init();
-			config_dialog.init();
-
-			// aviutl2ウィンドウを捕捉します。
-			catch_aviutl2_window();
+			config_dialog.init(idd_config);
 
 			// aviutl2ウィンドウにスリムバーをアタッチします。
 			hive.slimbar.subclass(hive.aviutl2_window);
 
 			// コンフィグをファイルから読み込みます。
+			// ※書き込みはコンフィグダイアログの終了時に実行します。
 			config_io.read();
 
 			return TRUE;
@@ -37,9 +38,6 @@ namespace apn::slimming
 		virtual BOOL dll_exit() override
 		{
 			MY_TRACE_FUNC("");
-
-			// コンフィグをファイルに書き込みます。
-			config_io.write();
 
 			// aviutl2ウィンドウからスリムバーをデタッチします。
 			hive.slimbar.unsubclass();

@@ -1,0 +1,7 @@
+﻿**下記URLにあるREADME(使い方など)をよく読みながら使用してください。**
+
+🐍AviUtl2プラグイン総合
+https://github.com/hebiiro/al2
+
+🐍AviUtl2 スリム化MOD 🔖r2 #2026年02月03日
+https://github.com/hebiiro/al2_slimming/tree/release/2

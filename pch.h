@@ -1,3 +1,3 @@
 ﻿#pragma once
 //#define MY_TRACE_ENABLED
-#include "common/core/include.hpp"
+#include "common/core/include2.hpp"

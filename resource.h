@@ -1,6 +1,6 @@
 ﻿//{{NO_DEPENDENCIES}}
 // Microsoft Visual C++ で生成されたインクルード ファイル。
-// al2_slimming.rc で使用
+// resource.rc で使用
 //
 #define idd_config                 101
 #define idc_slimbar_stc            1100

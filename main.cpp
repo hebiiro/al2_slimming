@@ -71,37 +71,8 @@ namespace apn::slimming
 	//
 	EXTERN_C INPUT_PLUGIN_TABLE* GetInputPluginTable()
 	{
-		//
-		// 入力プラグインの構造体です。
-		//
-		static struct InputPluginTable : INPUT_PLUGIN_TABLE
-		{
-			//
-			// 翻訳されたプラグイン名です。
-			//
-			const std::wstring name = tr(version.name);
-
-			//
-			// 翻訳されたプラグイン情報です。
-			//
-			const std::wstring information = my::format(L"{/}{/}",
-				tr(version.information), version.revision);
-
-			//
-			// コンストラクタです。
-			//
-			InputPluginTable() {
-				__super::name = name.c_str();
-				__super::information = version.information.c_str();
-				__super::flag = 0;
-				__super::filefilter = L"\0";
-				__super::func_config = [](HWND hwnd, HINSTANCE dll_hinst) -> bool
-				{
-					::ShowWindow(hive.plugin_window, SW_SHOW);
-					return true;
-				};
-			}
-		} input_plugin_table = {}; // ゼロ初期化→メンバ変数初期化→コンストラクタ呼び出しの順を想定しています。
+		// 入力プラグインの構造体を自動的に構築します。
+		static input_plugin_table_t input_plugin_table;
 
 		return &input_plugin_table;
 	}

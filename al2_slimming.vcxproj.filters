@@ -11,6 +11,9 @@
     <Filter Include="docs">
       <UniqueIdentifier>{0fac10e9-d43a-43c8-9041-3ec690b85283}</UniqueIdentifier>
     </Filter>
+    <Filter Include="assets">
+      <UniqueIdentifier>{c3315b87-39c2-4938-bf6f-1803e6edaaa1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -39,7 +42,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="al2_slimming.rc">
+    <ResourceCompile Include="resource.rc">
       <Filter>resource</Filter>
     </ResourceCompile>
   </ItemGroup>
@@ -65,5 +68,13 @@
     <None Include="LICENSE">
       <Filter>docs</Filter>
     </None>
+    <None Include="assets\al2_slimming.aul2">
+      <Filter>assets</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="package.txt">
+      <Filter>docs</Filter>
+    </Text>
   </ItemGroup>
 </Project>
