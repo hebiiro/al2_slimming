@@ -71,6 +71,9 @@
     <None Include="assets\al2_slimming.aul2">
       <Filter>assets</Filter>
     </None>
+    <None Include="CONTRIBUTING.md">
+      <Filter>docs</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Text Include="package.txt">

@@ -172,6 +172,7 @@
     <None Include=".gitattributes" />
     <None Include=".gitignore" />
     <None Include="assets\al2_slimming.aul2" />
+    <None Include="CONTRIBUTING.md" />
     <None Include="CREDITS.md" />
     <None Include="LICENSE" />
     <None Include="main.def" />
