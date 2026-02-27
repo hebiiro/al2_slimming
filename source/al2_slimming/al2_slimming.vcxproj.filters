@@ -1,23 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="framework">
+    <Filter Include="_">
       <UniqueIdentifier>{fbdc6a32-9548-4bb7-b33e-309ddcf2ba6c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="resource">
+    <Filter Include="_\resource">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="docs">
+    <Filter Include="_\root">
       <UniqueIdentifier>{0fac10e9-d43a-43c8-9041-3ec690b85283}</UniqueIdentifier>
     </Filter>
-    <Filter Include="assets">
-      <UniqueIdentifier>{c3315b87-39c2-4938-bf6f-1803e6edaaa1}</UniqueIdentifier>
+    <Filter Include="_\root\au2pkg">
+      <UniqueIdentifier>{711b2d80-3e6a-4c5a-9b24-e7518d05ecbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_\root\au2pkg\Language">
+      <UniqueIdentifier>{60b7109f-2b7a-4366-90b6-544019cb45c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_\root\au2pkg\Language\Template">
+      <UniqueIdentifier>{fa519552-53c2-4cd8-a7ec-54e48d148ac0}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
-      <Filter>framework</Filter>
+      <Filter>_</Filter>
     </ClInclude>
     <ClInclude Include="config_io.hpp" />
     <ClInclude Include="hive.hpp" />
@@ -26,58 +32,55 @@
     <ClInclude Include="utils.hpp" />
     <ClInclude Include="config_dialog.hpp" />
     <ClInclude Include="resource.h">
-      <Filter>resource</Filter>
+      <Filter>_\resource</Filter>
     </ClInclude>
     <ClInclude Include="version.hpp">
-      <Filter>framework</Filter>
+      <Filter>_</Filter>
     </ClInclude>
     <ClInclude Include="debug.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
-      <Filter>framework</Filter>
+      <Filter>_</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
-      <Filter>framework</Filter>
+      <Filter>_</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="resource.rc">
-      <Filter>resource</Filter>
+      <Filter>_\resource</Filter>
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="main.def">
-      <Filter>framework</Filter>
+      <Filter>_</Filter>
     </None>
-    <None Include=".editorconfig">
-      <Filter>docs</Filter>
+    <None Include="..\..\CONTRIBUTING.md">
+      <Filter>_\root</Filter>
     </None>
-    <None Include="CREDITS.md">
-      <Filter>docs</Filter>
+    <None Include="..\..\CREDITS.md">
+      <Filter>_\root</Filter>
     </None>
-    <None Include="README.md">
-      <Filter>docs</Filter>
+    <None Include="..\..\README.md">
+      <Filter>_\root</Filter>
     </None>
-    <None Include=".gitattributes">
-      <Filter>docs</Filter>
+    <None Include="..\..\.gitattributes">
+      <Filter>_\root</Filter>
     </None>
-    <None Include=".gitignore">
-      <Filter>docs</Filter>
+    <None Include="..\..\.gitignore">
+      <Filter>_\root</Filter>
     </None>
-    <None Include="LICENSE">
-      <Filter>docs</Filter>
+    <None Include="..\..\LICENSE">
+      <Filter>_\root</Filter>
     </None>
-    <None Include="assets\al2_slimming.aul2">
-      <Filter>assets</Filter>
-    </None>
-    <None Include="CONTRIBUTING.md">
-      <Filter>docs</Filter>
+    <None Include="..\..\au2pkg\Language\Template\al2_slimming.aul2">
+      <Filter>_\root\au2pkg\Language\Template</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="package.txt">
-      <Filter>docs</Filter>
+    <Text Include="..\..\au2pkg\package.txt">
+      <Filter>_\root\au2pkg</Filter>
     </Text>
   </ItemGroup>
 </Project>
