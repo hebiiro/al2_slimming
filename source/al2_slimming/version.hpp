@@ -9,6 +9,6 @@ namespace apn::slimming
 		//
 		// コンストラクタです。
 		//
-		version_t() : version_base_t(L"スリム化MOD", L"🐍スリム化MOD🔖", L"r2") {}
+		version_t() : version_base_t(L"スリム化MOD", L"🐍スリム化MOD🔖", L"r3") {}
 	} version;
 }
