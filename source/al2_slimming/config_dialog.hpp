@@ -17,6 +17,7 @@ namespace apn::slimming
 			set_check(idc_slimbar_flag_use, hive.slimbar.config.flag_use);
 			set_check(idc_slimbar_flag_whole_title, hive.slimbar.config.flag_whole_title);
 			set_int(idc_slimbar_button_width, hive.slimbar.config.button_width);
+			set_int(idc_slimbar_icon_size, hive.slimbar.config.icon_size);
 			set_text(idc_slimbar_title_format, hive.slimbar.config.title_format);
 
 			return TRUE;
@@ -32,6 +33,7 @@ namespace apn::slimming
 			get_check(idc_slimbar_flag_use, hive.slimbar.config.flag_use);
 			get_check(idc_slimbar_flag_whole_title, hive.slimbar.config.flag_whole_title);
 			get_int(idc_slimbar_button_width, hive.slimbar.config.button_width);
+			get_int(idc_slimbar_icon_size, hive.slimbar.config.icon_size);
 			get_text(idc_slimbar_title_format, hive.slimbar.config.title_format);
 
 			return TRUE;
@@ -53,6 +55,7 @@ namespace apn::slimming
 					break;
 				}
 			case idc_slimbar_button_width:
+			case idc_slimbar_icon_size:
 			case idc_slimbar_title_format:
 				{
 					if (code != EN_UPDATE) break;
@@ -87,6 +90,7 @@ namespace apn::slimming
 					switch (edit_id)
 					{
 					case idc_slimbar_button_width:
+					case idc_slimbar_icon_size:
 						{
 							auto value = get_int(edit_id);
 							value += (nm->iDelta > 0) ? -10 : +10;

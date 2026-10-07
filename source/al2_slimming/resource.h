@@ -2,15 +2,18 @@
 // Microsoft Visual C++ で生成されたインクルード ファイル。
 // resource.rc で使用
 //
-#define idd_config                 101
-#define idc_slimbar_stc            1100
+#define idd_config                      101
+#define idc_slimbar_stc                 1100
 #define idc_slimbar_flag_use            1101
 #define idc_slimbar_flag_whole_title    1102
-#define idc_slimbar_title_format_stc   1103
+#define idc_slimbar_title_format_stc    1103
 #define idc_slimbar_title_format        1104
-#define idc_slimbar_button_width_stc   1105
+#define idc_slimbar_button_width_stc    1105
 #define idc_slimbar_button_width        1106
 #define idc_slimbar_button_width_spin   1107
+#define idc_slimbar_icon_size           1108
+#define idc_slimbar_button_width_spin2  1109
+#define idc_slimbar_icon_size_spin      1109
 
 // Next default values for new objects
 // 
